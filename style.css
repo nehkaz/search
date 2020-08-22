@@ -5,8 +5,8 @@
 }
 
 body{
-    font-family: Poppins, sans-serif;
-    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
 }
 
 main{
@@ -16,6 +16,20 @@ main{
     justify-content: center;
 }
 
+.languages{
+    display: flex;
+}
+.languages ul{
+    display: flex;
+}
+
+.languages ul li{
+    margin-left:10px;
+}
+
+.languages ul li a{
+    color:#3C29BD;
+}
 .container{
     width: 95vw;
     margin: auto;
@@ -49,37 +63,51 @@ header nav{
 }
 
 main{
-    height: 80vh;
+    height: 78vh;
 }
 
 footer{
-    height: 10vh;
+    display:flex;
+    height: 12vh;
     width: 100vw;
-    background: greenyellow;
-    display: flex;
+    background:#F2F2F2;
     flex-direction: column;
+    color: rgba(0,0,0,0.7);
 }
 
 footer .location{
-    margin: 0 20px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    height: 50%;
+    padding: 10px 20px 0px 20px;
 }
+
 footer .info{
     display: flex;
     justify-content: space-between;
-    margin: 0 20px;
+    height:50%;
 }
 
-.how-to-use ul{
+.how-to-use, .policies{
+    height: 100%;
+    padding: 10px 20px 0px 20px;
+}
+
+.how-to-use ul, .policies ul{
     display: flex;
 }
 
-
-.how-to-use > ul > li > a{
+.how-to-use > ul > li{
     margin-right:20px;
 }
 
+.how-to-use ul li a, .policies ul li a{
+    color: rgba(0,0,0,0.7);
+}
 
-
+.policies ul li{
+    margin-left:20px;
+}
 
 
 a{
@@ -87,6 +115,58 @@ a{
     color:#000;
 }
 
+a:hover{
+    border-bottom: 1px solid;
+}
+
 li{
     list-style: none;
+}
+
+input{
+    width: 400px;
+    height: 34px;
+    border:0;
+    outline: 0;
+}
+
+.logo{
+    margin-top:-150px;
+}
+
+.input-div{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    height: 45px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    margin-bottom: 30px;
+}
+
+.cta{
+    margin-bottom: 30px;
+}
+
+.i{
+    padding:20px;
+}
+
+.container-form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#q{
+    color: red;
+}
+
+button{
+    height:35px;
+    padding: 0 12px;
+    background:#F4F4F4;
+    border:0;
+    border-radius: 2px;
+    cursor: pointer;
 }
